@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - AR Studio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="frame">
+        <!-- Шапка -->
+        <header class="header">
+            <div class="logo-container">
+                <img class="logo" src="https://c.animaapp.com/mcak5ehouZC9Gl/img/group-1.png" alt="Логотип AR Studio">
+                <div class="logo-text">Салон красоты<br>в Вологде</div>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">Главная</a>
+                <a href="service.html" class="nav-link">Услуги и прайс-лист</a>
+                <a href="ourworks.html" class="nav-link">Наши работы</a>
+                <a href="reviews.html" class="nav-link">Отзывы</a>
+            </nav>
+        </header>
+
+        <!-- Основной контент -->
+        <main class="main-content">
+            <section class="about-section">
+                <div class="about-image">
+                    <img src="https://c.animaapp.com/mcak5ehouZC9Gl/img/group.png" alt="Фото салона">
+                </div>
+                <div class="about-text">
+                    <h2>О нас:</h2>
+                    <p>
+                        <span>Добро пожаловать в AR Studio — ваш идеальный мир красоты и гармонии! Наша команда профессионалов с
+                        богатым опытом в индустрии красоты стремится подарить каждому клиенту незабываемые моменты наслаждения и
+                        преобразования.<br><br></span>
+                        <span class="highlight">Почему выбирают нас<br></span>
+                        <span>Качество: Мы используем только проверенное и высококачественное оборудование.<br>
+                        Атмосфера: Наш салон оформлен в стиле, способствующем расслаблению и гармонии.<br>
+                        Индивидуальный подход: Мы внимательно относимся к каждому клиенту, чтобы обеспечить наиболее подходящие решения.<br>
+                        Доступные цены: Мы предлагаем конкурентоспособные цены на все наши услуги, не жертвуя качеством.<br><br>
+                        Мы приглашаем вас посетить AR Studio и открыть для себя мир красоты и уюта. Позвольте нам позаботиться о вас и подарить
+                        ощущения, которые запомнятся надолго. Записаться на прием можно по телефону или через наш сайт. Мы ждем вас!</span>
+                    </p>
+                    <button class="appointment-btn" onclick="openAppointmentModal()">
+                        Записаться
+                        <img class="arrow" src="https://c.animaapp.com/mcak5ehouZC9Gl/img/arrow-4.svg" alt="Стрелка">
+                    </button>
+                </div>
+            </section>
+            <section class="works-section">
+                <div class="gallery-original">
+                    <div class="gallery-row">
+                        <div>
+                            <div class="gallery-item-original">
+                                <img src="https://c.animaapp.com/mcak5ehouZC9Gl/img/vector.png" alt="Фото салона 1">
+                            </div>
+                            <div class="gallery-item-original">
+                                <img src="https://c.animaapp.com/mcak5ehouZC9Gl/img/vector-2.png" alt="Фото салона 2">
+                            </div>
+                        </div>
+                        <div class="gallery-item-original tall">
+                            <img src="https://c.animaapp.com/mcak5ehouZC9Gl/img/vector-1.png" alt="Фото салона 3">
+                        </div>
+                        <div class="gallery-item-original tall">
+                            <img src="https://c.animaapp.com/mcak5ehouZC9Gl/img/vector-3.png" alt="Фото салона 4">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <h2>Наш адрес:</h2>
+            <div class="footer-content">
+                <div class="map-container">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=39.748628%2C59.256057&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTgzMTcxOTgzEm7QoNC-0YHRgdC40Y8sINCS0L7Qu9C-0LPQvtC00YHQutC40Lkg0LzRg9C90LjRhtC40L_QsNC70YzQvdGL0Lkg0L7QutGA0YPQsywg0L_QvtGB0ZHQu9C-0Log0JzQsNC50YHQutC40LksIDfQkSIKDZj-HkIVNAZtQg%2C%2C&z=17.14" 
+                            width="100%" height="442" frameborder="1" allowfullscreen="true"></iframe>
+                </div>
+                <div class="contacts">
+                    <div class="contact-item">
+                        <img src="https://c.animaapp.com/mcak5ehouZC9Gl/img/ri-building-fill.svg" alt="Адрес">
+                        <p>Вологда, п. Майский, д.7Б<br>(вход с торца здания)</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="https://c.animaapp.com/mcak5ehouZC9Gl/img/group-3.png" alt="Часы работы">
+                        <p>с 10:00 до 20:00<br>ПО ПРЕДВАРИТЕЛЬНОЙ ЗАПИСИ!</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="https://c.animaapp.com/mcak5ehouZC9Gl/img/ic-baseline-phone.svg" alt="Телефон">
+                        <p>Телефон для справок: <br><span class="phone">+7 (911) 537-96-53</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© AR Studio, 2023</p>
+                    <p>Разработка дизайна: Осокин Иван</p>
+                </div>
+                <div class="social">
+                    <a href="https://vk.com/arstudioofficial" target="_blank">
+                        <img src="https://c.animaapp.com/mcah0l9qCirirY/img/ri-vk-line.svg" alt="ВКонтакте">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Модальное окно для записи -->
+    <div id="appointmentModal" class="appointment-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAppointmentModal()">&times;</span>
+            <h2 class="modal-title">Запись на прием</h2>
+            
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="firstName">Имя:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Фамилия:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="service">Услуга:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Выберите услугу</option>
+                        <option value="hair">Парикмахерские услуги</option>
+                        <option value="nails">Ногтевой сервис</option>
+                        <option value="lashes">Наращивание ресниц</option>
+                        <option value="brows">Брови</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comment">Комментарий:</label>
+                    <textarea id="comment" name="comment"></textarea>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                    <label for="privacyPolicy">Я согласен(а) на обработку персональных данных</label>
+                </div>
+                
+                <div class="button-group">
+                    <button type="button" class="btn btn-secondary" onclick="closeAppointmentModal()">Назад</button>
+                    <button type="submit" class="btn btn-primary">Продолжить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Функции для работы модального окна
+        function openAppointmentModal() {
+            document.getElementById('appointmentModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeAppointmentModal() {
+            document.getElementById('appointmentModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Закрытие модального окна при клике вне его
+        window.onclick = function(event) {
+            const modal = document.getElementById('appointmentModal');
+            if (event.target == modal) {
+                closeAppointmentModal();
+            }
+        }
+        
+        // Обработка отправки формы
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Ваша заявка принята! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+            closeAppointmentModal();
+        });
+        
+        // Закрытие модального окна при нажатии ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeAppointmentModal();
+            }
+        });
+    </script>
+</body>
+</html>

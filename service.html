@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - AR Studio</title>
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <div class="frame">
+        <!-- Шапка -->
+        <header class="header">
+            <div class="logo-container">
+                <img class="logo" src="https://c.animaapp.com/mcak5ehouZC9Gl/img/group-1.png" alt="Логотип AR Studio">
+                <div class="logo-text">Салон красоты<br>в Вологде</div>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="service.html" class="nav-link active">Услуги и прайс-лист</a>
+                <a href="ourworks.html" class="nav-link">Наши работы</a>
+                <a href="reviews.html" class="nav-link">Отзывы</a>
+            </nav>
+        </header>
+
+        <!-- Основной контент -->
+        <main class="main-content">
+            <h1 class="page-title">Услуги и прайс-лист</h1>
+            
+            <div class="services-grid">
+                <div class="qwe">
+                    <!-- Парикмахерские услуги -->
+                    <div class="service-card" onclick="openModal('hairModal')">
+                        <div class="service-icon">
+                            <img src="https://c.animaapp.com/mcakbtwmtGLgqG/img/group.png" alt="Парикмахерские услуги">
+                        </div>
+                        <h2 class="service-title">Парикмахерские услуги</h2>
+                    </div>
+                    
+                    <!-- Ногтевой сервис -->
+                    <div class="service-card" onclick="openModal('nailsModal')">
+                        <div class="service-icon">
+                            <img src="https://c.animaapp.com/mcakbtwmtGLgqG/img/i--2--2.png" alt="Ногтевой сервис">
+                        </div>
+                        <h2 class="service-title">Ногтевой сервис</h2>
+                    </div>
+                </div>
+
+                <div class="qwe">
+                    <!-- Наращивание ресниц -->
+                    <div class="service-card" onclick="openModal('lashesModal')">
+                        <div class="service-icon">
+                            <img src="https://c.animaapp.com/mcakbtwmtGLgqG/img/game-icons-eyelashes.svg" alt="Наращивание ресниц">
+                        </div>
+                        <h2 class="service-title">Наращивание ресниц</h2>
+                    </div>
+                    
+                    <!-- Брови -->
+                    <div class="service-card" onclick="openModal('browsModal')">
+                        <div class="service-icon">
+                            <img src="https://c.animaapp.com/mcakbtwmtGLgqG/img/images-photoroom--1--1.png" alt="Брови">
+                        </div>
+                        <h2 class="service-title">Брови</h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <h2 class="footer-title">Наш адрес:</h2>
+            <div class="footer-content">
+                <div class="map-container">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=39.748628%2C59.256057&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTgzMTcxOTgzEm7QoNC-0YHRgdC40Y8sINCS0L7Qu9C-0LPQvtC00YHQutC40Lkg0LzRg9C90LjRhtC40L_QsNC70YzQvdGL0Lkg0L7QutGA0YPQsywg0L_QvtGB0ZHQu9C-0Log0JzQsNC50YHQutC40LksIDfQkSIKDZj-HkIVNAZtQg%2C%2C&z=17.14" 
+                            width="100%" height="442" frameborder="1" allowfullscreen="true"></iframe>
+                </div>
+                <div class="contacts">
+                    <div class="contact-item">
+                        <img src="https://c.animaapp.com/mcak5ehouZC9Gl/img/ri-building-fill.svg" alt="Адрес">
+                        <p>Вологда, п. Майский, д.7Б<br>(вход с торца здания)</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="https://c.animaapp.com/mcak5ehouZC9Gl/img/group-3.png" alt="Часы работы">
+                        <p>с 10:00 до 20:00<br>ПО ПРЕДВАРИТЕЛЬНОЙ ЗАПИСИ!</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="https://c.animaapp.com/mcak5ehouZC9Gl/img/ic-baseline-phone.svg" alt="Телефон">
+                        <p>Телефон для справок: <br><span class="phone">+7 (911) 537-96-53</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© AR Studio, 2023</p>
+                    <p>Разработка дизайна: Осокин Иван</p>
+                </div>
+                <div class="social">
+                    <a href="https://vk.com/arstudioofficial" target="_blank">
+                        <img src="https://c.animaapp.com/mcah0l9qCirirY/img/ri-vk-line.svg" alt="ВКонтакте">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Модальные окна для услуг -->
+    <!-- Модальное окно для парикмахерских услуг -->
+    <div id="hairModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('hairModal')">&times;</span>
+            <h2 class="modal-title">Парикмахерские услуги</h2>
+            <div class="price-list">
+                <div class="price-column">
+                    <h3>Женский зал</h3>
+                    <div class="price-item">
+                        <span>Женская стрижка</span>
+                        <span>1500 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Стрижка челки</span>
+                        <span>300 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Окрашивание волос</span>
+                        <span>от 2500 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Мелирование</span>
+                        <span>от 3000 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Укладка</span>
+                        <span>от 1000 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Вечерняя прическа</span>
+                        <span>от 2000 руб.</span>
+                    </div>
+                </div>
+                <div class="price-column">
+                    <h3>Мужской зал</h3>
+                    <div class="price-item">
+                        <span>Мужская стрижка</span>
+                        <span>800 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Детская стрижка</span>
+                        <span>600 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Стрижка машинкой</span>
+                        <span>500 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Бритье головы</span>
+                        <span>700 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Оформление бороды</span>
+                        <span>600 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Камуфляж седины</span>
+                        <span>500 руб.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Модальное окно для ногтевого сервиса -->
+    <div id="nailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('nailsModal')">&times;</span>
+            <h2 class="modal-title">Ногтевой сервис</h2>
+            <div class="price-list">
+                <div class="price-column">
+                    <h3>Маникюр</h3>
+                    <div class="price-item">
+                        <span>Аппаратный маникюр</span>
+                        <span>1200 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Комбинированный маникюр</span>
+                        <span>1500 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Мужской маникюр</span>
+                        <span>1700 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Детский маникюр</span>
+                        <span>900 руб.</span>
+                    </div>
+                </div>
+                <div class="price-column">
+                    <h3>Покрытие</h3>
+                    <div class="price-item">
+                        <span>Лак</span>
+                        <span>500 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Гель-лак</span>
+                        <span>1500 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Укрепление ногтей</span>
+                        <span>800 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Френч/градиент</span>
+                        <span>+500 руб.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Модальное окно для наращивания ресниц -->
+    <div id="lashesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('lashesModal')">&times;</span>
+            <h2 class="modal-title">Наращивание ресниц</h2>
+            <div class="price-list">
+                <div class="price-column">
+                    <div class="price-item">
+                        <span>Классическое наращивание</span>
+                        <span>2500 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>2D-объем</span>
+                        <span>3000 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>3D-объем</span>
+                        <span>3500 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Голливудский объем</span>
+                        <span>4000 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Коррекция</span>
+                        <span>2000 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Снятие ресниц</span>
+                        <span>500 руб.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Модальное окно для бровей -->
+    <div id="browsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('browsModal')">&times;</span>
+            <h2 class="modal-title">Услуги для бровей</h2>
+            <div class="price-list">
+                <div class="price-column">
+                    <div class="price-item">
+                        <span>Коррекция бровей</span>
+                        <span>800 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Окрашивание хной</span>
+                        <span>1000 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Окрашивание краской</span>
+                        <span>900 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Ламинирование бровей</span>
+                        <span>2500 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Комплекс (коррекция+окрашивание)</span>
+                        <span>1500 руб.</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Архитектура бровей</span>
+                        <span>1200 руб.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Функции для работы модальных окон
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Закрытие модального окна при клике вне его
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    closeModal(modal.id);
+                }
+            });
+        }
+        
+        // Закрытие модального окна при нажатии ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const modals = document.querySelectorAll('.modal');
+                modals.forEach(modal => {
+                    if (modal.style.display === 'block') {
+                        closeModal(modal.id);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
